@@ -34,13 +34,13 @@ def get_db():
     return g.link_db
 
 
-@app.route("/")
+@app.route("/") #main page
 def index():
     db = get_db()
     dbase = FDataBase(db)
     return render_template('index.html', menu = dbase.getMenu(), posts=dbase.getPostsAnonce())
 
-@app.route("/add_post", methods=["POST", "GET"])
+@app.route("/add_post", methods=["POST", "GET"]) #page for adding new posts
 def addPost():
     db = get_db()
     dbase = FDataBase(db)
@@ -55,13 +55,13 @@ def addPost():
             flash('Ошибка добавления статьи', category='error')
     return render_template('add_post.html', menu = dbase.getMenu(), title="Добавление статьи")
 
-@app.route("/about")
+@app.route("/about") #page with more info about us
 def about():
     db = get_db()
     dbase = FDataBase(db)
     return render_template("about.html", title="О сайте", menu=dbase.getMenu())
 
-@app.route("/contact", methods=["POST","GET"])
+@app.route("/contact", methods=["POST","GET"]) #feedback
 def contact():
     db = get_db()
     dbase = FDataBase(db)
@@ -84,7 +84,7 @@ def close_db(error):
     if hasattr(g, 'link_db'):
         g.link_db.close()
 
-@app.route("/post/<alias>")
+@app.route("/post/<alias>") #the post page
 def showPost(alias):
     db = get_db()
     dbase = FDataBase(db)
