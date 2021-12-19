@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+ {%if title%}
+     <title>Про Flask - {{title}}</title>
+ {%else%}
+     <title>Про Flask</title>
+ {%endif%}
+</head>
+<body>
+	{% extends 'base.html'%}
+	{% block content %}
+	{{ super() }}
+	<p id="error">Страница не найдена, вернуться на <a href="/">главную</a> страницу.<p>
+	{% endblock %}
+</body>
+</html>

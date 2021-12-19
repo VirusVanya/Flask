@@ -1,0 +1,141 @@
+body {
+ 	padding: 0;
+ 	margin: 0;
+ 	background-color: #6cc96b
+}
+
+a {
+ 	text-decoration: none;
+}
+
+#click{
+ 	position: relative;
+ 	top: 90px;
+ 	left: 20px;
+ 	width: 90px;
+ 	height: 30px;
+ 	border-radius: 5px;
+ 	background: #383838;
+}
+
+#about {
+ 	color: #ffffff;
+}
+
+#about:hover {
+ 	color: #000000;
+}
+
+#click:hover {
+ 	background: #636363;
+}
+
+#title {
+ 	position: relative;
+	top: 60px;
+	width: 100%;
+	font-size: 46px;
+	text-align: center;
+}
+
+.Menu {
+	position: fixed;
+	top: -33px;
+	justify-content: space-around;
+	width: 100%;
+	height: 70px;
+	font-size: 32px;
+	text-decoration: none;
+	display: flex;
+	background: #363636;
+	z-index: 2;
+}
+
+.Option {
+	list-style: none;
+	position: relative;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Option a {
+	color: #969696
+}
+
+.Option:hover {
+	background: #314736;
+}
+
+.Option:hover a{
+	color: #ffffff;
+}
+
+.form-contact {
+	position: relative;
+	top: 180px;
+	left: 700px;
+}
+
+.form-contact label {
+	display: inline-block;
+	min-width: 80px;
+}
+.form-contact p{
+	margin: 10px 0 10px 0;
+}
+.form-contact input[type=submit], textarea {
+	font-size: 16px;
+}
+
+.flash {
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: -100px;
+	padding: 10px;
+}
+.flash.success {
+	border: 1px solid #21DB56;
+	background: #AEFFC5;
+}
+.flash.error {
+	border: 1px solid #FF4343;
+	background: #FF9C9C;
+}
+
+#error {
+	margin-top: 100px;
+}
+
+hr {
+	position: relative;
+	top: 50px;
+}
+
+h2 {
+	position: relative;
+	top: 50px;
+}
+
+ul .list-posts {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.list-posts li {
+	margin-top: 70px;
+	border: 1px solid #eee;
+	max-width: 600px;
+}
+
+ul.list-posts .title {
+	margin: 0;
+	padding: 5px;
+	background: #eee;
+}
+
+ul.list-posts .annonce {
+	margin: 0;
+	padding: 10px 5px 10px 5px;
+}
